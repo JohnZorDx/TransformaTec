@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>teste de grid layout</title>
+    <style>
+        div{
+            border: 1px solid yellow
+        }
+        .container{
+            display:grid;
+            grid-template-columns: 100px 100px 100px;
+            grid-gap: 10px;
+        }
+
+        .box{
+            background-color: yellowgreen;
+            height: 100px;
+            width: 100px;
+        }
+
+        .a{
+            background-color: red;
+            height: 100px;
+            width: 100px;
+        }
+    </style>
+</head>
+<body>
+    
+    <div class="container">
+     <div class="box a">A</div>
+     <div class="box b">b</div>
+     <div class="box c">c</div>
+     <div class="box d">d</div>
+     <div class="box e">e</div>
+     <div class="box f">f</div>
+    
+
+    </div>
+
+</body>
+</html>
