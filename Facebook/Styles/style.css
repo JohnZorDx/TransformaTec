@@ -40,7 +40,7 @@ form {
     height: 106px
 }
 
-.left p {
+.left p{
     font-size: 30px;
     color: #1c1e21;
     height: 200px;
@@ -64,9 +64,14 @@ form input {
     padding: 15px;
     margin-bottom: 10px;
     border-radius: 5px;
-    border: 1px solid #999
+    border: 1px solid #999;
+    outline: none;
+    font-size: 16px;
 }
 
+form input:focus {
+    border: 1px solid #1877f2;
+}
 
 .right__loginbtn {
     background-color: #1877f2;
@@ -120,4 +125,75 @@ form input {
 .right p {
     font-family: 'Arial';
     font-size: 15px;
+}
+
+/* Parte de tela */
+
+@media(max-width: 950px){
+
+    .container{
+        flex-direction: column;
+    }
+
+    .left{
+        width: 400px;
+        align-content: center;
+        align-items: center;
+    }
+
+    .left p{
+        height: 75px;
+        font-size: 20px;
+    }
+
+}
+
+
+
+@media only screen and (max-width:500px){
+
+    .right{
+        display:flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    form{
+        width:350px;
+        align-content: center;
+        align-items: center;
+    }
+
+    .left p{
+        height: 100%;
+        font-size: 20px;
+    }
+
+}
+
+
+
+@media(max-width:370px){
+    .right{
+        display:flex;
+        justify-content: center;
+    }
+
+    .left{
+        display:flex;
+        justify-content: center;
+    }
+
+    .left img{
+        height: 95px;
+    }
+
+    .left p, .right p{
+        display: none;
+    }
+
+    form input, .right__forget, .right__loginBtn, .right__sign-upBtn{
+        font-size:12;
+    }
 }
