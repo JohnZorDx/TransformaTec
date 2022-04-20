@@ -1,0 +1,71 @@
+* {
+    box-sizing: border-box;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: goldenrod;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    min-width: 400px;
+    border: 15px solid black;
+    background: white;
+    border-radius: 10px;
+}
+
+
+.buttons,
+.result {
+    display: flex;
+    flex-wrap: wrap;
+    flex: 0 1 100%
+}
+
+.result{
+    height: 100px;
+    justify-content: flex-end;
+    align-items: center;
+    font-size: 36px;
+    background-image: url('https://woomagazine.com.br/wp-content/uploads/2017/05/18216803_1688305364797204_7979245161521463075_o-scaled.jpg');
+    /* background: slateblue; */
+    padding: 10px;
+    transition: 2s;
+    border-radius: 15px;
+}
+
+
+.result:hover {
+    background: mediumseagreen
+}
+
+.button {
+    display: flex;
+    flex: 0 1 25%;
+    justify-content: center;
+    align-items: center;
+    height: 50px;
+    border: 1px solid white;
+    cursor: pointer;
+    background:black;
+    font-size: 20px;
+    border-radius: 15px;
+    transition: 1s;
+}
+
+.button:hover {
+    background: mediumturquoise;
+}
+
+.zero {
+    flex-grow: 2;
+}
+
+.doubleBordered {
+    border: 2px solid goldenrod;
+}
