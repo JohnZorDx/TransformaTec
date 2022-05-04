@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>Minha página DOM</title>
+</head>
+
+<body>
+    <div class="header element" id="header">
+        <input type="submit" id="btn" value="Click me">
+    </div>
+    <div class="form element" id="form">
+        <input type="text" id="nome" class="input_form" value="Cassiano">
+    </div>
+</body>
+
+<script>
+    var element = document.getElementById("header")
+
+    //console.log(element)
+    //tag#id.classe
+    //div#header.header
+
+    var dado = document.getElementById("nome").value
+
+    //console.log(dado)
+
+    //Cassiano
+
+    var classes = document.getElementsByClassName("element")
+    console.log(classes)
+</script>
+
+</html>
